@@ -13,7 +13,7 @@ constructor ()
 render(){
 return (
   <div>
-    PROIECT2
+    THEO SHOP
   </div>
 )
 
