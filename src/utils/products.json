@@ -1,237 +1,226 @@
 
 {
-    "shoes": {
+    "audi": {
         "items": [
             {
                 "id": 1,
-                "name": "Sneakerși piele Massimo Dutti",
-                "price": 135,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/Rz8lVQa.jpg",
-                "size": 45,
-                "colour": "Negru",
-                "material": "Piele",
-                "brand": "Massimo Dutti",
-                "description": "Sneakerși din piele cu talpă inițial albă, din colecția de toamnă-iarnă 2019, Massimo Dutti."
+                "name": "Audi A1 Sportback",
+                "price": 24100,
+                "currency": "EURO",
+                "image": "https://cdn.audi.ro/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-ro-model-modelMenu-editableItems-9448-dropdown-278231-image/dh-500-a0e9a6/06fdbb94/1630919902/menue.jpg",
+                "year": 2021,
+                "colour": "Galben",
+                "motor": "Benzina",
+                "brand": "Audi",
+                "description": "Consum carburant mixt: 5,3-6,1 l/100 km"
             },
             {
                 "id": 2,
-                "name": "Teniși negri Polo Ralph Lauren",
-                "price": 100,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/Og3Oh24.jpg",
-                "size": 45,
-                "colour": "Negru",
-                "material": "Pânză",
-                "brand": "Polo Ralph Lauren",
-                "description": "Teniși din pânză cu talpă inițial albă, din colecția de primăvară-vară 2019, Fashion Days."
+                "name": "Audi A3 Sportback",
+                "price": 27500,
+                "currency": "EURO",
+                "image": "https://cdn.audi.ro/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-ro-model-modelMenu-editableItems-9513-dropdown-337150-image/dh-695-a0e9a6/984213c5/1637147894/1920x1080-audi-a3-sportback-my2021-0993-oe.jpg",
+                "year": 2021,
+                "colour": "Albastru",
+                "motor": "Benzina",
+                "brand": "Audi",
+                "description": "Consum combustibil mixt*: 4,3-7,1 l/100km"
             },
             {
                 "id": 3,
-                "name": "Ghete din piele maro Massimo",
-                "price": 185,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/zoqSu87.jpg",
-                "size": 45,
+                "name": "Audi A5 Sportback",
+                "price": 42400,
+                "currency": "EURO",
+                "image": "https://cdn.audi.ro/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-ro-model-modelMenu-editableItems-9738-dropdown-333072-image/dh-487-a0e9a6/1fba3f6a/1630919904/menue.jpg",
+                "year": 2020,
                 "colour": "Maro",
-                "material": "Piele",
-                "brand": "Massimo Dutti",
-                "description": "Ghete maro din piele, din colecția de toamnă-iarnă 2017, Massimo Dutti."
+                "motor": "Diesel",
+                "brand": "Audi",
+                "description": "Consum carburant mixt*: 4,7-7,5 l/100km"
             }
-        ],
-        "image": "https://i.imgur.com/X0qldXO.jpg",
-        "name": "Încălțăminte",
-        "description": "Ghete, pantofi, sneakerși: finețe garantată!"
+        ],     
+        "image":"https://audimediacenter-a.akamaihd.net/system/production/media/1282/images/bde751ee18fe149036c6b47d7595f6784f8901f8/AL090142_full.jpg?1581961854",
+        "name": "AUDI",
+        "description": "Audi, Germania"
     },
-    "sweaters": {
+    "bmw": {
         "items": [
             {
                 "id": 4,
-                "name": "Pulovăr finuț cu guler",
-                "price": 95,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/6afzuEr.jpg",
-                "size": "L",
-                "colour": "Maro",
-                "material": "Cașmir",
-                "brand": "DS Damat",
-                "description": "Pulovăr din cașmir, slim fit, colecția toamnă-iarnă 2019, DS Damat."
+                "name": "BMW Seria 8 coupe",
+                "price": 99000,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/8-series/coupe/2019/inspire/bmw-8series-coupe-inspire-sp-desktop.jpg.asset.1558018918720.jpg",
+                "year": "2021",
+                "colour": "White",
+                "motor": "Benzina-Diesel",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil, în l/100 km: 11,3"
             },
             {
                 "id": 5,
-                "name": "Pulovăr multicolor",
-                "price": 105,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/s0VytKc.jpg",
-                "size": "L",
-                "colour": "Multicolor",
-                "material": "Bumbac",
-                "brand": "McNeal",
-                "description": "Pulovăr multicolor, colecția toamnă-iarnă 209, McNeal."
+                "name": "BMW Seria 7 Sedan",
+                "price": 99187,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/7-series/sedan/2021/highlights/bmw-series-7-sedan-onepager-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1627456211352.jpg",
+                "year": "2020",
+                "colour": "Maro",
+                "motor": "Benzina-Diesel",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil 5,6 - 6,2 l/100 km"
             },
             {
                 "id": 6,
-                "name": "Pulovăr călduros și frumos",
-                "price": 165,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/BWGgzlK.jpg",
-                "size": "L",
+                "name": "BMW Seria 3 Touring",
+                "price": 35165,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/3-series/touring/2021/highlights/bmw-3-series-3er-touring-stage-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1628669280008.jpg",
+                "year": "2015",
                 "colour": "Multicolor",
-                "material": "Lână",
-                "brand": "SELECTED",
-                "description": "Pulovăr din lână, în carouri, colecția toamnă-iarnă 2019, SELECTED."
+                "motor": "Benzina-Diesel",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil 6,8 - 7,3 l / 100 km"
             },
             {
                 "id": 7,
-                "name": "Pulovăr din lână",
-                "price": 160,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/dTcMbHT.jpg",
-                "size": "L",
-                "colour": "Crem",
-                "material": "Lână",
-                "brand": "Massimo Dutti",
-                "description": "Pulovăr din lână cu model, colecția toamnă-iarnă 2019, Massimo Dutti."
+                "name": "BMW M240i xDrive Coupé ",
+                "price": 55335,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/m-series/bmw-m240i-xdrive-coupe/onepager/bmw-2-series-m240i-xdrive-coupe-onepager-sp-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1635257425565.jpg",
+                "year": "2021",
+                "colour": "Negru",
+                "motor": "Benzina",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil, în l/100 km: 8.8 - 8.1"
             }
         ],
-        "image": "https://i.imgur.com/SZU7liE.jpg",
-        "name": "Pulovere",
-        "description": "Pulovărașe elegănțele, slim, clasă superioară."
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png",
+        "name": "BMW",
+        "description": "BMW, Germania"
     },
-    "pants": {
+    "ford": {
         "items": [
             {
                 "id": 8,
-                "name": "Blugi bleumarin slim fit",
-                "price": 35,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/VhpATO8.jpg",
-                "size": "34",
-                "colour": "Bleumarin închis",
-                "material": "Blug",
-                "brand": "DS Damat",
-                "description": "Blugi bleumarin, slim fit, colecția primăvară-vară 2019, DS Damat."
+                "name": "Ford Mustang GT.",
+                "price": 46500,
+                "currency": "EURO",
+                "image": "https://www.ford.ro/content/dam/guxeu/rhd/central/cars/2018-mustang/launch/galleries/models/ford-mustang-gt.jpg.renditions.extra-large.jpeg",
+                "year": "2021",
+                "colour": "Gri",
+                "motor": "Benzina",
+                "brand": "Ford",
+                "description": "Consum 11.8-12.2 l/100Km."
             },
             {
                 "id": 9,
-                "name": "Blugi negri slim fit",
-                "price": 40,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/weiI07t.jpg",
-                "size": "34",
-                "colour": "Negru-gri",
-                "material": "Blug",
-                "brand": "DS Damat",
-                "description": "Blugi negri, slim fit, colecția toamnă-iarnă 2019, DS Damat."
+                "name": "Ford Mondeo vignale hybrid",
+                "price": 33200,
+                "currency": "EURO",
+                "image": "https://www.ford.ro/content/dam/guxeu/rhd/central/cars/2018-mondeo-hybrid/launch/gallery/exterior/9x8/ford-mondeo-eu-Extra_Shot_6_G-9x8-1200x1066.jpg.renditions.small.jpeg",
+                "year": "2018",
+                "colour": "Gri",
+                "mtor": "Benzina",
+                "brand": "Ford",
+                "description": "Consum 4-5.6 l/100Km"
             }
         ],
-        "image": "https://i.imgur.com/srQCDRN.jpg",
-        "name": "Pantaloni/blugi",
-        "description": "Jeanși și pantaloni pentru baieții care și-o ard patroni!"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/800px-Ford_logo_flat.svg.png",
+        "name": "FORD",
+        "description": "Ford, USA"
     },
-    "jackets": {
+    "dacia": {
         "items": [
             {
                 "id": 10,
-                "name": "Haină lungă din lână virgină",
-                "price": 210,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/IXrZitQ.jpg",
-                "size": "L",
+                "name": "Dacia Logan Confort",
+                "price": 11450,
+                "currency": "EURO",
+                "image": "https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/logan/lji-logan/logan-lji-ph1/hero-zones/dacia-logan-lji-ph1-hero-zone-001.jpg.ximg.mediumx2.webp/7291d566b4.webp",
+                "year": "2020",
                 "colour": "Gri închis",
-                "material": "Lână virgină",
-                "brand": "Peek and Cloppenburg",
-                "description": "Haină lungă din lână virgină, colecția toamnă-iarnă 2018, Peek and Cloppenburg."
+                "motor": "Benzina",
+                "brand": "Dacia",
+                "description": "Consum 5.2 l/100 km"
             },
             {
                 "id": 11,
-                "name": "Geacă bleumarin cu glugă detașabilă",
-                "price": 250,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/eCZd7PU.jpg",
-                "size": "L",
+                "name": "Dacia Duster SL Extreem",
+                "price": 22100,
+                "currency": "EURO",
+                "image": "https://cdn.group.renault.com/dac/master/dacia-vn/vehicules/duster/hjd-duster/hjd-duster-ph2/hero-zone/dacia-duster-hjd-ph2-hero-zone-001.jpg.ximg.mediumx2.webp/13ccbe7e4a.webp",
+                "year": "2021",
                 "colour": "Bleumarin",
-                "material": "Poliester",
-                "brand": "DS Damat",
-                "description": "Geacă bleumarin cu glugă detașabilă, colecția toamnă-iarnă 2019, DS Damat."
+                "motor": "Diesel",
+                "brand": "Dacia",
+                "description": "Consum 6.2-6.3 l/100 km"
             }
         ],
-        "image": "https://i.imgur.com/81I6Oab.jpg",
-        "name": "Geci/Haine",
-        "description": "Confortabile, călduroase și nu arăți ca un cartof!"
+        "image": "https://www.carlogos.org/logo/Dacia-logo-2008-1920x1080.png",
+        "name": "DACIA",
+        "description": "Dacia, Romania"
     },
-    "tshirts": {
+    "fiat": {
         "items": [
             {
                 "id": 12,
-                "name": "Tricou în dungi",
-                "price": 90,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/BWvzCwB.jpg",
-                "size": "L",
-                "colour": "Multicolor",
-                "material": "Bumbac",
-                "brand": "Lacoste",
-                "description": "Tricou în dungi, colecția primăvară-vară 2019, Lacoste."
+                "name": "Fiat 500",
+                "price": 15000,
+                "currency": "EURO",
+                "image": "https://www.fiat.com.ro/wp-content/uploads/2015/08/Fiat-500-Star-White-Citycar-Vehicle-740X498-e1560331056724.jpg",
+                "year": "2020",
+                "colour": "Alba",
+                "motor": "Benzina -Hybrid",
+                "brand": "Fiat",
+                "description": "Consum 3.9-4.7 l/100Km"
             },
             {
                 "id": 13,
-                "name": "Tricou de ping pong",
-                "price": 110,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/4BbF4TO.jpg",
-                "size": "L",
-                "colour": "Roșu",
-                "material": "Poliester",
-                "brand": "Li Ning",
-                "description": "Tricou de ping pong cu imprimeu cu dragon, purtat de jucatorii naționalei chinei în 2013."
-            },
-            {
-                "id": 14,
-                "name": "Tricou original BVB cu autograf",
-                "price": 1909,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/etIsbHV.jpg",
-                "size": "L",
-                "colour": "Galben-Negru",
-                "material": "Poliester",
-                "brand": "Puma",
-                "description": "Tricoul purtat de Borussia Dortmund în sezonul competițional 2018-2019, cu numarul 7 și numele 'SANCHO'. Tricoul este semnat de portarul Borussiei, Roman Burki."
+                "name": "Fiat Tipo Sedan",
+                "price": 17307,
+                "currency": "EURO",
+                "image": "https://www.fiat.com/content/dam/fiat/cross/models/tipo_2020/opening/desktop/figurini/sedan/tipo/Tipo-Model-page-GelatoWhite-Car_Desktop-680x430.png",
+                "year": "2021",
+                "colour": "Alb",
+                "motor": "Benzina",
+                "brand": "Fiat",
+                "description": "Consum 5.4 l/100 km"
             }
+            
         ],
-        "image": "https://i.imgur.com/l27WtFL.jpg",
-        "name": "Tricouri",
-        "description": "Și de băiețeală și de sport."
+        "image": "https://www.android.com/static/2016/img/auto/logos/fiat_w_1x.jpg",
+        "name": "FIAT",
+        "description": "Fiat, Italia, Torino"
     },
-    "accesories": {
+    "opel": {
         "items": [
             {
                 "id": 15,
-                "name": "Fular TJ cu două fețe",
-                "price": 85,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/rSVUiLO.jpg",
-                "size": "Universal",
-                "colour": "Gri-Bleumarin",
-                "material": "Cașmir",
-                "brand": "Trussardi Jeans",
-                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+                "name": "Opel Corsa",
+                "price": 12400,
+                "currency": "EURO",
+                "image": "https://www.opel.ro/content/dam/opel/master/vehicles/corsa-f/21x9/opel_corsa_exterior_21x9_co20_e02_001.jpg?imwidth=1920",
+                "year": "2021",
+                "colour": "Rosu",
+                "motor": "Benzina-Diesel",
+                "brand": "Opel",
+                "description": "Consum 4.2-5.3 l/100 km"
             },
             {
                 "id": 16,
-                "name": "Mănuși din piele",
-                "price": 60,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/LbjGaZ1.jpg",
-                "size": "L",
+                "name": "Opel Inignia GS",
+                "price": 25500,
+                "currency": "EURO",
+                "image": "https://static.automarket.ro/img/auto_resized/db/article/099/249/835852l-1000x640-b-d0f5023e.jpg",
+                "year": "2021",
                 "colour": "Negru",
-                "material": "Piele",
-                "brand": "DS Damat",
-                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+                "motor": "Diesel",
+                "brand": "Opel",
+                "description": "Consum 4.1 l/100 km."
             }
         ],
-        "image": "https://i.imgur.com/qw3wDj8.jpg",
-        "name": "Accesorii",
-        "description": "Fulare, căciuli, mănuși: nu mai sta pe gânduri, cumpără-le acuși!"
+        "image": "https://iconape.com/wp-content/png_logo_vector/opel-2.png",
+        "name": "OPEL",
+        "description": "Opel, Germania"
     }
 }
