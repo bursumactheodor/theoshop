@@ -1,19 +1,66 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import HomeCategory from '../components/HomeCategory';
+import products from '../utils/products.json';
 
 
-function Home(props) {
-    console.log(props);
-    return (
-        <div>
-            <Layout>
-                <h1>Pagina Home</h1>
+class Home extends React.Component {
+    constructor()
+    {
+        super();
+        this.state={
+            categories:[],
+            categoryNames:[]
+            
+
+
+        };
+
+    }
+    componentDidMount(){
+
+       const categories = Object.values(products);
+       const categoryNames = Object.keys(products);
+      // this.setState({categories});
+       this.setState({
+           categories:categories,
+           categoryNames:categoryNames
+       })
+    }
+    render(){
+        return (
+            <div>
+                <Layout>
+                    <div className="container">
+                        <div className="row"> 
+                        {
+                            this.state.categories.map((category,index) =>{
+                                return(
+                                    <HomeCategory 
+                                        key={index}                          
+                                        description = {category.description}
+                                        image={category.image}
+                                        title={category.name}
+                                        routeName={this.state.categoryNames[index]}
+                                                       
+                                    />
+                                    )
+
+                                    })                    
+                        }                         
+                        </div>
+    
+                    </div>
+                      
+                               
+                </Layout>
+                 
                
-            </Layout>
-             
-           
-        </div>
-    )
+            </div>
+        )
+
+    }
+   
 }
 
 export default Home

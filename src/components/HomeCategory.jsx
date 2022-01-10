@@ -9,6 +9,7 @@ function HomeCategory(props){
     return (
         
         <div className="col-6 mb-4">
+            <h1>vvv</h1>
             <Link to={`/category/${routeName}`}>
                 <img 
                 className="w-100"
