@@ -50,12 +50,8 @@ class Home extends React.Component {
                         }                         
                         </div>
     
-                    </div>
-                      
-                               
-                </Layout>
-                 
-               
+                    </div>                                                   
+                </Layout>                              
             </div>
         )
 
