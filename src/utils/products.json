@@ -24,7 +24,7 @@
                 "colour": "Albastru",
                 "motor": "Benzina",
                 "brand": "Audi",
-                "description": "Consum combustibil mixt*: 4,3-7,1 l/100km"
+                "description": "Consum combustibil mixt: 4,3-7,1 l/100km"
             },
             {
                 "id": 3,
@@ -36,7 +36,7 @@
                 "colour": "Maro",
                 "motor": "Diesel",
                 "brand": "Audi",
-                "description": "Consum carburant mixt*: 4,7-7,5 l/100km"
+                "description": "Consum carburant mixt: 4,7-7,5 l/100km"
             }
         ],     
         "image":"https://audimediacenter-a.akamaihd.net/system/production/media/1282/images/bde751ee18fe149036c6b47d7595f6784f8901f8/AL090142_full.jpg?1581961854",
@@ -55,7 +55,7 @@
                 "colour": "White",
                 "motor": "Benzina-Diesel",
                 "brand": "BMW",
-                "description": "Consum mixt de combustibil, în l/100 km: 11,3"
+                "description": "Consum mixt de combustibil 11.3 l/100 km"
             },
             {
                 "id": 5,
@@ -120,7 +120,7 @@
                 "image": "https://www.ford.ro/content/dam/guxeu/rhd/central/cars/2018-mondeo-hybrid/launch/gallery/exterior/9x8/ford-mondeo-eu-Extra_Shot_6_G-9x8-1200x1066.jpg.renditions.small.jpeg",
                 "year": "2018",
                 "colour": "Gri",
-                "mtor": "Benzina",
+                "motor": "Benzina",
                 "brand": "Ford",
                 "description": "Consum 4-5.6 l/100Km"
             }

@@ -5,7 +5,8 @@ function ProductList(props) {
     const {products}=props;
 
     return (
-        <div>
+        <div className="container-fluid">
+            <div className="row">
             {
             products 
             ? products.map((product)=>{
@@ -16,12 +17,19 @@ function ProductList(props) {
                         name={product.name}
                         price={product.price}
                         currency={product.currency}
-                        image={product.image}                   
+                        image={product.image}  
+                        colour ={product.colour} 
+                        motor ={product.motor} 
+                        year={product.year}
+                        description ={product.description}               
                     />
                 )
             })
             :null
            } 
+
+            </div>
+            
         </div>
     )
 }
