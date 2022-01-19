@@ -11,9 +11,6 @@ class Home extends React.Component {
         this.state={
             categories:[],
             categoryNames:[]
-            
-
-
         };
 
     }
