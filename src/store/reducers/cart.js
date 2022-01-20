@@ -1,9 +1,9 @@
 
-const initialSate={
+const initialState={
      products:[]
 };
 
-function cartReducer(state=initialSate,actionData)
+export function cartReducer(state=initialState,actionData)
 {
     switch (actionData.type)
     {
@@ -20,4 +20,3 @@ function cartReducer(state=initialSate,actionData)
     }
       
 }
-export default cartReducer;
