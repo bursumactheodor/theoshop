@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import {logOutUser} from '../store/actions/user';
 
 function Header(props){
-    const {numberOfProducts,user,logout}=props; 
+    const { numberOfProducts,user,logout } = props; 
 
     return (
         <header className="border-bottom mb-3">
@@ -18,14 +18,13 @@ function Header(props){
             <div>
                 {
                     user 
-                    ? <p>Salut {user.displayName}</p>
+                    ? <p>Salut, {user.displayName}</p>
                     : null
                 }
                 <div className="d-flex justify-content-end" >
                     {
-                        // <p className="logout h5" onClick={ () => logout()}>Delogare</p>
                         user 
-                        ?  <button className="btn btn-outline-dark d-flex alin-items-center" onClick={ () => logout()}>Delogare</button>
+                        ?  <p className="logout h5" onClick={ () => logout()}>Delogare</p>
                         : <Link  to="/login" className="h5 mb-0">Logare</Link>
                     }
                    
