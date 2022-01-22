@@ -8,7 +8,6 @@ import products from '../utils/products.json';
 function Category () {
     
     const routeParams = useParams();
-    const routeParam=routeParams.categoryName;
     const categoryName=routeParams.categoryName;
   
    const [stateCateg, setStateCateg] = useState({  category:{}  });
