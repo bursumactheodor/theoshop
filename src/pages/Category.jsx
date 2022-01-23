@@ -10,19 +10,33 @@ function Category () {
     const routeParams = useParams();
     const categoryName=routeParams.categoryName;
   
-   const [stateCateg, setStateCateg] = useState({  category:{}  });
+  const [stateCateg, setStateCateg] = useState({  category:{}  });
 
-    useEffect(() => {          
-        if (Object.keys(stateCateg.category).length === 0 )
-        {
-            setStateCateg({category:products[categoryName]}); 
-        }     
-       });       
+    useEffect(() => {   
+            if (stateCateg.category && Object.keys(stateCateg.category).length === 0  )
+            {
+                setStateCateg({category:products[categoryName]}); 
+            }     
+       }); 
+   
+ //   const stateCateg = {category:products[categoryName]};
+   
+
         return (
-            <div className="container">
+            <div className="container-fluid container-min-max-width">
                 <Layout>
-                <h1>{stateCateg.category.name}</h1>
-                <ProductList products={stateCateg.category.items}/>
+                        {
+                            stateCateg.category 
+                            ? <h1> {stateCateg.category.name} </h1>
+                            : <h1> {"Marca nu exista!"} </h1>
+                        }             
+                    <ProductList 
+                        products = {
+                            stateCateg.category 
+                            ? stateCateg.category.items
+                            : null
+                        }
+                    />               
                 </Layout>
                
             </div>

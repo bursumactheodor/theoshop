@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "todo",
-  authDomain: "todo",
-  projectId: "todo",
-  storageBucket: "todo",
-  messagingSenderId: "todo",
-  appId: "todo"
-}
+  apiKey: "**",
+  authDomain: "**",
+  projectId: "**",
+  storageBucket: "**",
+  messagingSenderId: "**",
+  appId: "**"
+};
 export default firebaseConfig;

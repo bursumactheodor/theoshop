@@ -18,6 +18,8 @@ class Home extends React.Component {
 
        const categories = Object.values(products);
        const categoryNames = Object.keys(products);
+     //  console.log(categories);
+     //  console.log(categoryNames);
       // this.setState({categories});
        this.setState({
            categories:categories,
