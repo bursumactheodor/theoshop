@@ -1,7 +1,9 @@
 const initialState={
     data:null,
     loading:false,
-    error:null
+    error:null,
+    signInFacebook:false,
+    signInGoogle:false
 };
 
 export function userReducer(state = initialState, actionData){
@@ -16,8 +18,23 @@ export function userReducer(state = initialState, actionData){
             return{
                     ...state,
                     data:actionData.payload,
-                    loading:false
-            }  
+                    loading:false                  
+            } 
+            
+        case 'UPDATE_SIGN_IN_GOOGLE' :
+            return {
+                ...state,
+                signInGoogle:actionData.payload
+                
+
+            }
+        case 'UPDATE_SIGN_IN_FACEBOOK':
+            return {
+                ...state,
+                signInFacebook:actionData.payload
+
+            }
+        
         case 'UPDATE_ERROR' :
             return{
                     ...state,

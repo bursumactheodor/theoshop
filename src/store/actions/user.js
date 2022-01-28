@@ -1,5 +1,5 @@
 import {signInWithGoogle, signOutFromGoogle} from '../../apis/firebase';
-
+import {signInWithFacebook,signOutFromFacebook} from '../../apis/firebase'
 
 export function startLoading(){
     
@@ -23,27 +23,73 @@ export function updateEror(payload){
     };
 }
 
-export function loginUser() {
+export function updateSignInFacebook(payload){
+    
+    return{
+        type:'UPDATE_SIGN_IN_FACEBOOK',
+        payload:payload      
+    };
+}
+export function updateSignInGoogle(payload){
+    
+    return{
+        type:'UPDATE_SIGN_IN_GOOGLE',
+        payload:payload       
+    };
+}
+
+
+export function loginUserGoogle() {
     return (dispatch) => {
             dispatch (startLoading() );
 
             signInWithGoogle().then((result)=> {
                 const payload = result.user;
                 dispatch(updateUserData(payload));
+                dispatch(updateSignInGoogle(true) );
                            }).catch((error)=>{
                                 dispatch(updateEror(error));
                             });
     }
 }
 
-export function logOutUser(){
+export function logOutUserGoogle(){
     return (dispatch) => {
         dispatch (startLoading() );
 
         signOutFromGoogle().then((result)=> {
             //const payload = result.user; // poate e null
-
             dispatch(updateUserData(null));
+            dispatch(updateSignInGoogle(false));
+        }).catch((error)=>{
+            dispatch(updateEror(error));
+        })
+
+    }
+}
+
+export function loginUserFacebook() {
+    return (dispatch) => {
+            dispatch (startLoading() );
+
+            signInWithFacebook().then((result)=> {
+                const payload = result.user;
+                dispatch(updateUserData(payload));
+                dispatch(updateSignInFacebook(true) );
+                           }).catch((error)=>{
+                                dispatch(updateEror(error));
+                            });
+    }
+}
+
+export function logOutUserFacebook(){
+    return (dispatch) => {
+        dispatch (startLoading() );
+
+        signOutFromFacebook().then((result)=> {
+            //const payload = result.user; // poate e null
+            dispatch(updateUserData(null));
+            dispatch(updateSignInFacebook(false));
         }).catch((error)=>{
             dispatch(updateEror(error));
         })

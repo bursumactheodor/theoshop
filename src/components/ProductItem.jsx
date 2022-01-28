@@ -2,12 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {addToCart} from '../store/actions/cart'
 import { Link } from 'react-router-dom';
+import './ProductItem.css';
 
 function ProductItem(props) {
     const { id,name,price,currency,image,colour,motor,year,description,addToCartInjected } = props;
-    
+   
     return (
-        <div className="col-6">
+        <div className="product-item col-12 col-md-6 d-flex flex-column align-items-center mb-3">
         <Link to={`/product/${id}`}>
             <img src={image} alt="produs" className="w-100"/>
             <p>{id}</p>

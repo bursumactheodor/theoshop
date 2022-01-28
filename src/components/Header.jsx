@@ -4,10 +4,10 @@ import logo from '../assets/images/logo.png';
 import './Header.css';
 import {ReactComponent as ShoppingCart} from '../assets/icons/shopping-cart.svg';
 import {connect} from 'react-redux';
-import {logOutUser} from '../store/actions/user';
+import {logOutUserGoogle,logOutUserFacebook} from '../store/actions/user';
 
 function Header(props){
-    const { numberOfProducts,user,logout } = props; 
+    const { numberOfProducts,user,logOutUserGoogle,logOutUserFacebook,signF,signG } = props; 
 
     return (
         <header className="border-bottom mb-3">
@@ -24,7 +24,20 @@ function Header(props){
                 <div className="d-flex justify-content-end" >
                     {
                         user 
-                        ?  <p className="logout h5" onClick={ () => logout()}>Delogare</p>
+                        ? <div>
+                            {
+                                 signG 
+                                 ? <p className="logout h5" onClick={ () => logOutUserGoogle()}>Delogare</p>
+                                 : null
+                            }
+                            {
+                                signF 
+                                ? <p className="logout h5" onClick={ () => logOutUserFacebook()}>Delogare</p>
+                                : null  
+                            }                         
+                            
+                          </div>
+                         
                         : <Link  to="/login" className="h5 mb-0">Logare</Link>
                     }
                    
@@ -44,12 +57,17 @@ function Header(props){
 function mapStateToProps(state){
     return {
         numberOfProducts : state.cart.products.length,
-        user:state.user.data
+        user:state.user.data,
+        signF:state.user.signInFacebook,
+        signG:state.user.signInGoogle
+
     };
 }
 function mapDispatchToProps(dispatch){
     return {
-        logout: () => dispatch(logOutUser())
+        logOutUserGoogle: () => dispatch(logOutUserGoogle()),
+        logOutUserFacebook: () => dispatch(logOutUserFacebook()),
+
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Header);

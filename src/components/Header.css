@@ -1,21 +1,11 @@
-.header img{
-    width: 200px;
-    height: auto;
-}
 header .logo {
     width: 150px;
     height: auto;
 }
 
-/* stilizam logoutul */
 header .logout:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-/*
-.header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
+
+

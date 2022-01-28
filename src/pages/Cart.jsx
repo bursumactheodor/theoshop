@@ -11,11 +11,11 @@ function Cart(props) {
                     <p>COS DE CUMPARATURI</p>
                     {
                         cartProducts.map((product) => {
-                            return(
-                                <div className="d-flex">
+                            return (
+                                <div key={product.id} className="d-flex">              
                                     <p className="w-50">{product.id}</p>
-                                     <p className="w-50">{product.name}</p>
-                                     <p className="w-50">{product.price}{product.currency}</p>
+                                    <p className="w-50">{product.name}</p>
+                                    <p className="w-50">{product.price}{product.currency}</p>
                                 </div>
                             )
                         })

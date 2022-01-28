@@ -8,6 +8,8 @@ import Category from './pages/Category';
 import Page404 from './pages/Page404';
 import Cart from './pages/Cart';
 import Product from './pages/Product';
+import Terms from './pages/Terms';
+
 
 
 class App extends React.Component {
@@ -25,6 +27,7 @@ render(){
         <Route exact path="/home" element={<Home/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/about" element={<About/>} />
+        <Route exact path="/terms" element={<Terms/>} />
         <Route exact path="/category/:categoryName" element={<Category/>} />
         <Route exact path="/cart" element={<Cart/>} />
         <Route exact path="/product/:productId" element={<Product/>} />

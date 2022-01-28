@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import Layout from '../components/Layout';
+import BaseListSidebar from '../components/BaseListSidebar';
 import ProductList from '../components/ProductList';
 import { useParams } from 'react-router-dom';
 import products from '../utils/products.json';
@@ -20,16 +21,18 @@ function Category () {
        }); 
    
  //   const stateCateg = {category:products[categoryName]};
-   
-
         return (
             <div className="container-fluid container-min-max-width">
                 <Layout>
                         {
                             stateCateg.category 
-                            ? <h1> {stateCateg.category.name} </h1>
+                            ? <div>
+                                    <h1> {stateCateg.category.name} </h1>
+                                    <BaseListSidebar/> 
+                              </div>
                             : <h1> {"Marca nu exista!"} </h1>
-                        }             
+                        } 
+                               
                     <ProductList 
                         products = {
                             stateCateg.category 

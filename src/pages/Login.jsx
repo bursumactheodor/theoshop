@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 import { useNavigate} from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import {ReactComponent as Google} from '../assets/icons/google.svg';
+import {ReactComponent as Facebook} from '../assets/icons/facebook.svg';
 import { connect } from 'react-redux';
-import { loginUser } from '../store/actions/user';
+import { loginUserGoogle,loginUserFacebook } from '../store/actions/user';
 import './Login.css'
 
 
 function Login(props) {
 
     const navigate = useNavigate();
-    const  {loginUser,userData} = props;
+    const  {loginUserGoogle,loginUserFacebook,userData} = props;
 
 
    if(userData !=null){
@@ -28,10 +29,18 @@ function Login(props) {
             <p>Alege providerul cu care vrei sa te loghezi:</p>
             <button
              className="btn btn-outline-dark d-flex align-items-center"
-             onClick={ () => loginUser() }
+             onClick={ () => loginUserGoogle() }
             >
                  <Google className="w-50 mr-3"/> 
                 <span className="text-nowrap">Logheaza-te cu Google</span>
+
+            </button>
+            <button
+             className="btn btn-outline-dark d-flex align-items-center"
+             onClick={ () => loginUserFacebook() }
+            >
+                 <Facebook className="w-50 mr-3"/> 
+                <span className="text-nowrap">Logheaza-te cu Facebook</span>
 
             </button>
         </div>
@@ -46,7 +55,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return {
-        loginUser : () => { dispatch(loginUser())}
+        loginUserGoogle : () => { dispatch(loginUserGoogle())},
+        loginUserFacebook : () => { dispatch(loginUserFacebook())}
     };
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Login);

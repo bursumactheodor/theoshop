@@ -1,4 +1,3 @@
-import { findAllByAltText } from '@testing-library/react';
 import React from 'react';
 import {useState,useEffect} from 'react';
 import { useParams } from 'react-router-dom';
@@ -8,7 +7,8 @@ import {addToCart} from '../store/actions/cart'
 import products from '../utils/products.json';
 
 function Product(props) {
-    const{ addToCartInjected }=props;
+   
+    const{ addToCartInjected } = props;
 
     const routeParams = useParams();
     const productId = Number(routeParams.productId);
@@ -29,26 +29,30 @@ function Product(props) {
         return selectProd;
     }
    
-
     const [productState, setProductState] = useState({  product:{}  });
 
     useEffect(() => { 
         const selectProd = getProduct();
+        if(selectProd === undefined)
+           return;
         if ( productState.product && Object.keys(productState.product).length === 0 )
         { 
             setProductState({product:selectProd}); 
+           // console.log(selectProd);
+           // console.log(productState.product);
         }     
        });  
- 
-//  const selectProd = getProduct();
-//  const productState={product:selectProd};
+  
+ // const selectProd = getProduct();
+ // const productState={product:selectProd};
+    
     const {id,name,price,currency,image,colour,motor,year,description} = productState.product;
     return (
         
         <div className="container-fluid container-min-max-width">
                 <Layout>
                     {
-                        productState.product
+                        Object.keys(productState.product).length > 0
                         ? <div>
                             <h1>{name}</h1>
                             <div>
@@ -75,11 +79,7 @@ function Product(props) {
                                     }
                                 })
                             }
-                        }
-
-                             
-                                
-                              
+                        }                            
                                 
                             >
                             Adauga in cos
