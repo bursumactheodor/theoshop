@@ -11,6 +11,7 @@ class Home extends React.Component {
         this.state={
             categories:[],
             categoryNames:[]
+           
         };
 
     }
@@ -23,7 +24,7 @@ class Home extends React.Component {
       // this.setState({categories});
        this.setState({
            categories:categories,
-           categoryNames:categoryNames
+           categoryNames:categoryNames         
        })
     }
     render(){
