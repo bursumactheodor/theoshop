@@ -31,7 +31,7 @@ function Category () {
         return (
             <div className="container-fluid container-min-max-width">
                 <Layout>
-                    <div className="container-fluid  d-flex flex-row justify-content-start category">
+                    <div className="container-fluid  d-flex flex-row justify-content-start category-page">
                         <div >                   
                         {
                             stateCateg.category 

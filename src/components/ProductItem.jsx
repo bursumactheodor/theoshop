@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import './ProductItem.css';
 
 function ProductItem(props) {
-    const { id,name,price,currency,image,colour,motor,year,description,addToCartInjected } = props;
-   
+    const { id,name,price,currency,image,colour,motor,year,description } = props;
+    const {addToCartInjected} = props;
+
     return (
         <div className="product-item col-12 col-md-6 d-flex flex-column align-items-center mb-3">
         <Link to={`/product/${id}`}>
@@ -31,7 +32,8 @@ function ProductItem(props) {
                                 colour:colour,
                                 motor:motor,
                                 year:year,
-                                description:description
+                                description:description,
+                                quantity:1
                             }
                         })
                     }

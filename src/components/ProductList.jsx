@@ -42,7 +42,6 @@ function ProductList(props) {
             resultPrice = products;   
             
         }
-
         if((an0 || an1 || an2 ) === true)
         {
             //console.log("Cel putin un an selectat!");

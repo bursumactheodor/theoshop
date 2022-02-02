@@ -1,6 +1,6 @@
-.category + div{
+.category-page + div{
     width:8rem;
 }
-.category h1{
+.category-page h1{
     margin-bottom: 50px;
 }
