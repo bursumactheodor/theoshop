@@ -9,6 +9,7 @@ import Page404 from './pages/Page404';
 import Cart from './pages/Cart';
 import Product from './pages/Product';
 import Terms from './pages/Terms';
+import Favorites from './pages/Favorites';
 
 
 
@@ -31,6 +32,7 @@ render(){
         <Route exact path="/category/:categoryName" element={<Category/>} />
         <Route exact path="/cart" element={<Cart/>} />
         <Route exact path="/product/:productId" element={<Product/>} />
+        <Route exact path="/favorites" element={<Favorites/>} />
         <Route  path="*" element={<Page404/>} />
       </Routes>      
       </div>

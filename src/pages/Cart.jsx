@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { removeFromCart } from '../store/actions/cart';
 import './Cart.css';
 
-//groupProducts
 function Cart(props) {
 
     const { cartProducts } = props;
@@ -63,10 +62,15 @@ function Cart(props) {
     
     return ( 
             <Layout>
-                <div className="cart-page container-fluid container-min-max-width d-flex flex-column justify-content-center align-items-center">
+                
+                            
+                <div className="cart-page container-fluid container-min-max-width d-flex flex-column justify-content-center align-items-center">                     
                     {
                         cartProducts.length > 0 
                         ? <div className="w-100">
+                                <div className="ml-3 pd-3 cart-page container-fluid container-min-max-width d-flex justify-content-start border-bottom">
+                                    <h4>Cosul meu:</h4>
+                                </div> 
                                 <div className="d-flex justify-content-between text-center h4 text-bold">
                                     <p className="w-25">Produs</p>
                                     <p className="w-25">Pret</p>

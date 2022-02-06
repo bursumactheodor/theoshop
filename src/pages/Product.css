@@ -1,15 +1,22 @@
 
+.product-page .add-to-favorites:hover {
+    cursor: pointer;
+}
+
 .product-page .image-wrapper {
-    width: 400px;
-    height: 400px;
-    /* ATENTIE! Am sters clasa de bootstrap din Product.js(justify-content-center), intrucat
-    ea se punea cu !important si nu mai putea fi suprascrisa de stilizarea pe mobile! */
-    /* In sachimb, avem proprietatea justify-content cu doua valori: una aici si una la @media */
-    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: start;
+    
 }
 
 .product-page .image-wrapper img {
-    height: 100%;
+     max-width: 1000px; 
+     width: 100%;
+     height: auto; 
+     margin-right: 8px;
 }
 
 /* Stilizarea pe mobile */
@@ -18,12 +25,15 @@
     .product-page .image-wrapper {
         width: 100%;
         height: auto;
+        flex-direction: column;
+         align-items:flex-start;
         justify-content: start;
     }
 
     .product-page .image-wrapper img {
         width: 100%;
         height: auto;
+        margin-bottom: 8px;
     }
 
     .product-page .product-info {
@@ -33,4 +43,4 @@
     .product-page .product-details {
         margin-top: 1.5rem;
     }
-}
+} 

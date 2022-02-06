@@ -1,4 +1,13 @@
 .product-item img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 400px;
+    height: auto;
+}
+.product-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-item .add-to-favorites:hover {
+    cursor: pointer;
+    text-decoration: none;
 }

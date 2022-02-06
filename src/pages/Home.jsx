@@ -4,6 +4,7 @@ import HomeCategory from '../components/HomeCategory';
 import products from '../utils/products.json';
 
 
+
 class Home extends React.Component {
     constructor()
     {
@@ -30,9 +31,9 @@ class Home extends React.Component {
     render(){
         
         return (
-            <div>
+            <div >
                 <Layout>
-                    <div className="container">
+                    <div className="container"> 
                         <div className="row"> 
                         {
                             this.state.categories.map((category,index) =>{

@@ -1,4 +1,5 @@
 import React from 'react';
+import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate} from 'react-router-dom';
 import logo from '../assets/images/logo.png';
@@ -13,12 +14,14 @@ function Login(props) {
 
     const navigate = useNavigate();
     const  {loginUserGoogle,loginUserFacebook,userData} = props;
-
-
-   if(userData !=null){
-        navigate('/');
-   }
-                   
+  
+    useEffect(() => {
+    
+        if(userData != null){
+            navigate('/');
+        }
+    });
+   
     return (
         <div className="login-page">
 
