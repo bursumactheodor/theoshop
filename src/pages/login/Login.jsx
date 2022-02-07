@@ -2,11 +2,11 @@ import React from 'react';
 import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate} from 'react-router-dom';
-import logo from '../assets/images/logo.png';
-import {ReactComponent as Google} from '../assets/icons/google.svg';
-import {ReactComponent as Facebook} from '../assets/icons/facebook.svg';
+import logo from '../../assets/images/logo.png';
+import {ReactComponent as Google} from '../../assets/icons/google.svg';
+import {ReactComponent as Facebook} from '../../assets/icons/facebook.svg';
 import { connect } from 'react-redux';
-import { loginUserGoogle,loginUserFacebook } from '../store/actions/user';
+import { loginUserGoogle,loginUserFacebook } from '../../store/user/userActions';
 import './Login.css'
 
 

@@ -1,4 +1,3 @@
-
 const firebaseConfig = {
   apiKey: "**",
   authDomain: "**",

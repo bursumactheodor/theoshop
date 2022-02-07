@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/layout/Layout';
 import {connect} from 'react-redux';
-import { ReactComponent as Close} from '../assets/icons/close.svg';
+import { ReactComponent as Close} from '../../assets/icons/close.svg';
 import { Link } from 'react-router-dom';
-import { removeFromCart } from '../store/actions/cart';
+import { removeFromCart } from '../../store/cart/cartActions';
 import './Cart.css';
 
 function Cart(props) {
@@ -61,9 +61,7 @@ function Cart(props) {
 }
     
     return ( 
-            <Layout>
-                
-                            
+            <Layout>             
                 <div className="cart-page container-fluid container-min-max-width d-flex flex-column justify-content-center align-items-center">                     
                     {
                         cartProducts.length > 0 

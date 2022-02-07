@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+import logo from '../../assets/images/logo.png';
 import './Header.css';
-import {ReactComponent as ShoppingCart} from '../assets/icons/shopping-cart.svg';
-import {ReactComponent as Heart1} from '../assets/icons/heart1.svg';
-import {ReactComponent as Heart2} from '../assets/icons/heart2.svg';
+import {ReactComponent as ShoppingCart} from '../../assets/icons/shopping-cart.svg';
+// import {ReactComponent as Heart1} from '../../assets/icons/heart1.svg';
+import {ReactComponent as Heart2} from '../../assets/icons/heart2.svg';
 import {connect} from 'react-redux';
-import {logOutUserGoogle,logOutUserFacebook} from '../store/actions/user';
+import {logOutUserGoogle,logOutUserFacebook} from '../../store/user/userActions';
 
 function Header(props){
     const {numberOfFavorites, numberOfProducts,user,logOutUserGoogle,logOutUserFacebook,signF,signG } = props; 

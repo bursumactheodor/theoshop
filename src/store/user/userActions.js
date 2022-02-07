@@ -1,24 +1,30 @@
 import {signInWithGoogle, signOutFromGoogle} from '../../apis/firebase';
 import {signInWithFacebook,signOutFromFacebook} from '../../apis/firebase'
 
+import {START_LOADING} from './userConstants';
+import {UPDATE_USER_DATA} from './userConstants';
+import {UPDATE_ERROR} from './userConstants';
+import {UPDATE_SIGN_IN_FACEBOOK} from './userConstants';
+import {UPDATE_SIGN_IN_GOOGLE} from './userConstants';
+
 export function startLoading(){
     
     return{
-        type:'START_LOADING'      
+        type:START_LOADING    
     };
 }
 
 export function updateUserData(payload){
     
     return{
-        type:'UPDATE_USER_DATA',
+        type:UPDATE_USER_DATA,
         payload:payload
     };
 }
 export function updateEror(payload){
     
     return{
-        type:'UPDATE_ERROR',
+        type:UPDATE_ERROR,
         payload:payload
     };
 }
@@ -26,14 +32,14 @@ export function updateEror(payload){
 export function updateSignInFacebook(payload){
     
     return{
-        type:'UPDATE_SIGN_IN_FACEBOOK',
+        type:UPDATE_SIGN_IN_FACEBOOK,
         payload:payload      
     };
 }
 export function updateSignInGoogle(payload){
     
     return{
-        type:'UPDATE_SIGN_IN_GOOGLE',
+        type:UPDATE_SIGN_IN_GOOGLE,
         payload:payload       
     };
 }

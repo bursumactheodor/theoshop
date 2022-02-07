@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {ReactComponent as Close} from '../assets/icons/close.svg';
-import Layout from '../components/Layout';
+import {ReactComponent as Close} from '../../assets/icons/close.svg';
+import Layout from '../../components/layout/Layout';
 import {connect} from 'react-redux';
-import { removeFromFavorites } from '../store/actions/favorites';
-import { addToCart } from '../store/actions/cart';
+import { removeFromFavorites } from '../../store/favorites/favoritesActions';
+import { addToCart } from '../../store/cart/cartActions';
 import './Favorites.css';
 
 function Favorites(props) {

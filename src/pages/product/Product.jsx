@@ -1,13 +1,13 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import Layout from '../components/Layout';
+import Layout from '../../components/layout/Layout';
+import products from '../../utils/products.json';
+import {ReactComponent as FullHeart} from '../../assets/icons/full-heart.svg';
+import {ReactComponent as EmptyHeart} from '../../assets/icons/empty-heart.svg';
+import {addToFavorites,removeFromFavorites} from '../../store/favorites/favoritesActions';
+import {addToCart} from '../../store/cart/cartActions';
 import { connect } from 'react-redux';
-import {addToCart} from '../store/actions/cart'
-import products from '../utils/products.json';
-import {ReactComponent as FullHeart} from '../assets/icons/full-heart.svg';
-import {ReactComponent as EmptyHeart} from '../assets/icons/empty-heart.svg';
-import {addToFavorites,removeFromFavorites} from '../store/actions/favorites';
 import './Product.css';
 
 function Product(props) {

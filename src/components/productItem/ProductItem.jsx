@@ -1,15 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {addToCart} from '../store/actions/cart';
-import {addToFavorites,removeFromFavorites} from '../store/actions/favorites';
+import {addToCart} from '../../store/cart/cartActions';
+import {addToFavorites,removeFromFavorites} from '../../store/favorites/favoritesActions';
 import { Link } from 'react-router-dom';
 import './ProductItem.css';
-import {ReactComponent as FullHeart} from '../assets/icons/full-heart.svg';
-import {ReactComponent as EmptyHeart} from '../assets/icons/empty-heart.svg';
+import {ReactComponent as FullHeart} from '../../assets/icons/full-heart.svg';
+import {ReactComponent as EmptyHeart} from '../../assets/icons/empty-heart.svg';
 
 function ProductItem(props) {
     const { id,name,price,currency,image,colour,motor,year,description } = props;
-    const {addToCartInjected,addToFavorites,removeFromFavorites} = props;
+    const {addToCart,addToFavorites,removeFromFavorites} = props;
     const {idFavorites} = props;
    
 function addRemove(payload,option)
@@ -54,7 +54,7 @@ function addRemove(payload,option)
             <button 
                 className="btn btn-outline-dark"
                 onClick={() => {
-                        addToCartInjected({
+                        addToCart({
                             product:{
                                 id:id,
                                 name:name,
@@ -87,7 +87,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
     return {
-        addToCartInjected : (payload) => dispatch(addToCart(payload)),
+        addToCart : (payload) => dispatch(addToCart(payload)),
         addToFavorites : (payload) => dispatch(addToFavorites(payload)),
         removeFromFavorites : (payload) => dispatch(removeFromFavorites(payload)),
     };

@@ -3,10 +3,17 @@
 }
 /* Setam dimensiunea maxima pentru imagine in pagin de cart */
 .cart-page img {
-    max-height: 100px;
+    width: 200px;
+    height: auto;
 }
 
 /* Vrem sa schimbam cursorul la hover peste iconita care sterge produsul din cart */
 .cart-page svg {
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .cart-page img {
+        width:80px;
+        height: auto;
+    }
 }

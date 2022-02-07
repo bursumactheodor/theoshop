@@ -1,10 +1,10 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
-import Layout from '../components/Layout';
-import BaseListSidebar from '../components/BaseListSidebar';
-import ProductList from '../components/ProductList';
+import Layout from '../../components/layout/Layout';
+import BaseListSidebar from '../../components/baseListSidebar/BaseListSidebar';
+import ProductList from '../../components/productList/ProductList';
 import { useParams } from 'react-router-dom';
-import products from '../utils/products.json';
+import products from '../../utils/products.json';
 import './Category.css';
 
 function Category () {

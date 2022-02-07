@@ -1,15 +1,15 @@
 import React from 'react';
 import { Route,Routes } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import About from './pages/About';
-import Category from './pages/Category';
-import Page404 from './pages/Page404';
-import Cart from './pages/Cart';
-import Product from './pages/Product';
-import Terms from './pages/Terms';
-import Favorites from './pages/Favorites';
+import Home from './pages/home/Home';
+import Login from './pages/login/Login';
+import About from './pages/about/About';
+import Category from './pages/category/Category';
+import Page404 from './pages/page404/Page404';
+import Cart from './pages/cart/Cart';
+import Product from './pages/product/Product';
+import Terms from './pages/terms/Terms';
+import Favorites from './pages/favorites/Favorites';
 
 
 
