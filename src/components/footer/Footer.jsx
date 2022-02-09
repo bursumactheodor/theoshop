@@ -14,7 +14,7 @@ function Footer() {
                     <h3 className="h5">Link-uri rapide:</h3>
                     <Link to='/about'>Despre</Link>
                     <Link to='/terms'>Termeni si conditii</Link>
-                    <a href='https://lst-telefoane.netlify.app/' target="_blank" rel="noopener noreferrer">Demo Lista Telefoane</a>
+                    {/* <a href='https://lst-telefoane.netlify.app/' target="_blank" rel="noopener noreferrer">Demo Lista Telefoane</a> */}
                     <a href='https://smtrk.herokuapp.com/' target="_blank" rel="noopener noreferrer">Blog Samothraki</a>
                 </div>
                 <div className="footer-group">

@@ -67,7 +67,7 @@
                 "colour": "Maro",
                 "motor": "Benzina-Diesel",
                 "brand": "BMW",
-                "description": "Consum mixt de combustibil 5,6 - 6,2 l/100 km"
+                "description": "Consum mixt de combustibil 5,6-6,2 l/100 km"
             },
             {
                 "id": 6,
@@ -79,7 +79,7 @@
                 "colour": "Multicolor",
                 "motor": "Benzina-Diesel",
                 "brand": "BMW",
-                "description": "Consum mixt de combustibil 6,8 - 7,3 l / 100 km"
+                "description": "Consum mixt de combustibil 6,8-7,3 l/100 km"
             },
             {
                 "id": 7,
@@ -91,8 +91,33 @@
                 "colour": "Negru",
                 "motor": "Benzina",
                 "brand": "BMW",
-                "description": "Consum mixt de combustibil, în l/100 km: 8.8 - 8.1"
+                "description": "Consum mixt de combustibil 7.8-8.1 l/100 km"
+            },
+            {
+                "id": 17,
+                "name": "BMW Seria 1 ",
+                "price": 26359,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/1-series/5-door/2021/highlights/bmw-1-series-mc-design-hero-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1632213950500.jpg",
+                "year": 2021,
+                "colour": "Alb",
+                "motor": "Benzina-Diesel",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil 6.8 - 7.5 l/100 km"
+            },
+            {
+                "id": 18,
+                "name": "BMW Seria 3 Sedan",
+                "price": 87346,
+                "currency": "EURO",
+                "image": "https://www.bmw.ro/content/dam/bmw/common/all-models/m-series/m3-sedan/2020/overview/bmw-3-series-sedan-m-automobiles-mc-product-highlights-m3-competition-hero-desktop.jpg/jcr:content/renditions/cq5dam.resized.img.1680.large.time1627456514575.jpg",
+                "year": 2021,
+                "colour": "Alb",
+                "motor": "Benzina",
+                "brand": "BMW",
+                "description": "Consum mixt de combustibil 10.2 l/100 km"
             }
+
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png",
         "name": "BMW",
@@ -194,6 +219,18 @@
     },
     "opel": {
         "items": [
+            {
+                "id": 14,
+                "name": "Opel Mokka",
+                "price": 21030,
+                "currency": "EURO",
+                "image": "https://www.opel.ro/content/dam/opel/romania/offers/2022/Mokka_2880x1235.jpg?imwidth=1920",
+                "year": 2021,
+                "colour": "Alb",
+                "motor": "Benzina",
+                "brand": "Opel",
+                "description": "Consum 4-5.5 l/100 km"
+            },
             {
                 "id": 15,
                 "name": "Opel Corsa",
